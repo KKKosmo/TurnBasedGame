@@ -1,0 +1,19 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class FPSDisplay : MonoBehaviour
+{
+    public int avgFrameRate;
+    public Text display_Text;
+
+    public void Update()
+    {
+        float current = (int)(1f / Time.unscaledDeltaTime);
+        avgFrameRate = (int)current;
+        display_Text.text = avgFrameRate.ToString() + " FPS";
+        if (avgFrameRate < 60)
+        {
+            Debug.Log(avgFrameRate);
+        }
+    }
+}
