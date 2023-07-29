@@ -2,3 +2,5 @@
 
 a game made with unity intended to be released for mobile.
 very incomplete
+
+Has a Finite State Machine
